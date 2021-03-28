@@ -1,0 +1,77 @@
+.thermometer__tube {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+    
+    .therm-glass {
+        height: 10rem;
+        width: 1.5rem;
+        padding: 1.3rem;
+        background: #e5e5e5;
+        border-bottom: none;
+        border-top-left-radius: 15rem;
+        border-top-right-radius: 15rem;
+        position: relative;
+    }
+
+    .therm-bulb {
+        height:4rem;
+        width: 4rem;
+        // border: .3rem solid rgb(218, 218, 218);
+        background: #e5e5e5;
+        border-radius: 80%;
+        position: relative;
+        top: -1rem;
+    }
+}
+
+.fahrenheit__thermometer .fill {
+    background: rgb(218, 28, 21);
+    height: 1rem;
+    z-index: 5;
+    padding: 1.3rem;
+    border-bottom: none;
+    position: absolute;
+    top: -5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+}
+
+.fahrenheit__thermometer .therm-bulb {
+    height:4rem;
+    width: 4rem;
+    // border: .3rem solid rgb(218, 218, 218);
+    background: rgb(218, 28, 21);
+    border-radius: 80%;
+    position: relative;
+    top: -1rem;
+}
+
+.celsius__thermometer .fill {
+    background: rgb(36, 121, 218);
+    height: 1rem;
+    z-index: 5;
+    padding: 1.3rem;
+    border-bottom: none;
+    position: absolute;
+    top: -5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.celsius__thermometer .therm-bulb {
+    height:4rem;
+    width: 4rem;
+    // border: .3rem solid rgb(218, 218, 218);
+    background: rgb(36, 121, 218);
+    border-radius: 80%;
+    position: relative;
+    top: -1rem;
+}

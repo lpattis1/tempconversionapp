@@ -1,0 +1,68 @@
+.btn-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    
+    .farenheit__btn {
+        background: rgb(236, 236, 236);
+        padding: 2rem 2rem;
+        border: none;
+        margin-right: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgb(218, 28, 21);
+        border-radius: .5rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:focus {
+            outline-width: 0;
+        }
+    }
+    
+    .farenheit__resetbtn {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: rgb(71, 71, 71);
+
+        cursor: pointer;
+
+        &:focus {
+            outline-width: 0;
+        }
+    }
+
+    .celsius__btn {
+        background: rgb(236, 236, 236);
+        padding: 2rem 2rem;
+        border: none;
+        margin-right: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgb(36, 121, 218);
+        border-radius: .5rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:focus {
+            outline-width: 0;
+        }
+    }
+    
+    .celsius__resetbtn {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: rgb(71, 71, 71);
+
+        cursor: pointer;
+
+        &:focus {
+            outline-width: 0;
+        }
+    }
+
+}

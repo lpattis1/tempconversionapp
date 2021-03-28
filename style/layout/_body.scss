@@ -1,0 +1,122 @@
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 25rem;
+    margin-bottom: 10rem;
+    font-size: 2.6rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    max-width: 140rem;
+    align-items: center;
+    justify-items: center;
+
+    .fahrenheit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &__title {
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 4rem;
+            color: rgb(218, 28, 21);
+        }
+
+        &__conversion {
+            display: flex;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    .celsius {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &__title {
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 4rem;
+            color: rgb(36, 121, 218);
+        }
+
+        &__conversion {
+            display: flex;
+            margin-bottom: 1.6rem;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+
+}
+
+.celsius__input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 17rem;
+    padding-bottom: 1rem;
+
+    &:focus {
+        outline-width: 0;
+    }
+}
+
+.celsius__output {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 17rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+
+    &:focus {
+        outline-width: 0;
+    }
+}
+
+.fahrenheit__input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 17rem;
+    padding-bottom: 1rem;
+
+    &:focus {
+        outline-width: 0;
+    }
+}
+
+.fahrenheit__output {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 17rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+
+    &:focus {
+        outline-width: 0;
+    }
+}

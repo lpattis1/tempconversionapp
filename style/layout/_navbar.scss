@@ -1,0 +1,32 @@
+nav {
+    margin-top: 10rem;
+}
+
+.navbar {
+    max-width: 160rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo-hold {
+        display: flex;
+        color: rgb(36, 121, 218);
+        font-size: 2.5rem;
+
+        .letter-one {
+            color: black;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+
+        li, a {
+            color: black;
+            font-size: 2rem;
+            margin-right: 2rem;
+        }
+    }
+}

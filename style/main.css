@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btn-holder {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.btn-holder .farenheit__btn {
+  background: #ececec;
+  padding: 2rem 2rem;
+  border: none;
+  margin-right: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #da1c15;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-holder .farenheit__btn:focus {
+  outline-width: 0;
+}
+.btn-holder .farenheit__resetbtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #474747;
+  cursor: pointer;
+}
+.btn-holder .farenheit__resetbtn:focus {
+  outline-width: 0;
+}
+.btn-holder .celsius__btn {
+  background: #ececec;
+  padding: 2rem 2rem;
+  border: none;
+  margin-right: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2479da;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-holder .celsius__btn:focus {
+  outline-width: 0;
+}
+.btn-holder .celsius__resetbtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #474747;
+  cursor: pointer;
+}
+.btn-holder .celsius__resetbtn:focus {
+  outline-width: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 25rem;
+  margin-bottom: 10rem;
+  font-size: 2.6rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  max-width: 140rem;
+  align-items: center;
+  justify-items: center;
+}
+.container .fahrenheit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .fahrenheit__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #da1c15;
+}
+.container .fahrenheit__conversion {
+  display: flex;
+  margin-bottom: 1.6rem;
+}
+.container .celsius {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .celsius__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #2479da;
+}
+.container .celsius__conversion {
+  display: flex;
+  margin-bottom: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.celsius__input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  width: 17rem;
+  padding-bottom: 1rem;
+}
+.celsius__input:focus {
+  outline-width: 0;
+}
+
+.celsius__output {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  width: 17rem;
+  padding-bottom: 1rem;
+  margin-left: 2rem;
+}
+.celsius__output:focus {
+  outline-width: 0;
+}
+
+.fahrenheit__input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  width: 17rem;
+  padding-bottom: 1rem;
+}
+.fahrenheit__input:focus {
+  outline-width: 0;
+}
+
+.fahrenheit__output {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  width: 17rem;
+  padding-bottom: 1rem;
+  margin-left: 2rem;
+}
+.fahrenheit__output:focus {
+  outline-width: 0;
+}
+
+nav {
+  margin-top: 10rem;
+}
+
+.navbar {
+  max-width: 160rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo-hold {
+  display: flex;
+  color: #2479da;
+  font-size: 2.5rem;
+}
+.navbar__logo-hold .letter-one {
+  color: black;
+}
+.navbar__links {
+  display: flex;
+  align-items: center;
+}
+.navbar__links li, .navbar__links a {
+  color: black;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.thermometer__tube {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+}
+.thermometer__tube .therm-glass {
+  height: 10rem;
+  width: 1.5rem;
+  padding: 1.3rem;
+  background: #e5e5e5;
+  border-bottom: none;
+  border-top-left-radius: 15rem;
+  border-top-right-radius: 15rem;
+  position: relative;
+}
+.thermometer__tube .therm-bulb {
+  height: 4rem;
+  width: 4rem;
+  background: #e5e5e5;
+  border-radius: 80%;
+  position: relative;
+  top: -1rem;
+}
+
+.fahrenheit__thermometer .fill {
+  background: #da1c15;
+  height: 1rem;
+  z-index: 5;
+  padding: 1.3rem;
+  border-bottom: none;
+  position: absolute;
+  top: -5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.fahrenheit__thermometer .therm-bulb {
+  height: 4rem;
+  width: 4rem;
+  background: #da1c15;
+  border-radius: 80%;
+  position: relative;
+  top: -1rem;
+}
+
+.celsius__thermometer .fill {
+  background: #2479da;
+  height: 1rem;
+  z-index: 5;
+  padding: 1.3rem;
+  border-bottom: none;
+  position: absolute;
+  top: -5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.celsius__thermometer .therm-bulb {
+  height: 4rem;
+  width: 4rem;
+  background: #2479da;
+  border-radius: 80%;
+  position: relative;
+  top: -1rem;
+}/*# sourceMappingURL=main.css.map */

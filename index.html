@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Temperature Conversion</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+
+            <div class="navbar__logo-hold">
+                <h3 class="logo-hold__logo"><span class="letter-one">L</span>P</h3>
+            </div>
+
+            <ul class="navbar__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">More Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+     <!-- title -->
+     <div class="title">
+        <h1>Temperature Conversion</h1>
+    </div>
+
+    <div class="container">
+
+        <!-- fahrenheit conversion -->
+        <section class="fahrenheit">
+
+            <h2 class="fahrenheit__title">Celsius to Fahrenheit</h2>
+
+            <!-- fahrenheit input -->
+            <form class="fahrenheit__conversion">
+                <input type="number" class="fahrenheit__input" placeholder="Celsius">
+                <input type="number" class="fahrenheit__output" placeholder="Farenheit" readonly = "true">
+            </form>
+
+            <!-- fahrenheit btn -->
+            <div class="fahrenheit__thermometer">
+
+                <div class="thermometer__tube">
+                    <div class="therm-glass">
+                        <span class="fill f-fill"></span>
+                    </div>
+                    <div class="therm-bulb f-bulb">
+                        <span class="amount"></span>
+                    </div>
+                </div>
+
+                <div class="btn-holder">
+                    <button class="farenheit__btn">To Fahrenheit</button>
+                    <button class="farenheit__resetbtn">Reset</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- celsius conversion -->
+        <section class="celsius">
+
+            <h2 class="celsius__title">Fahrenheit to Celsius</h2>
+
+            <!-- fahrenheit input -->
+            <form class="celsius__conversion">
+                <input type="number" class="celsius__input" placeholder="Farenheit">
+                <input type="number" class="celsius__output" readonly = "true" placeholder="Celsius">
+            </form>
+
+            <!-- fahrenheit btn -->
+            <div class="celsius__thermometer">
+
+                <div class="thermometer__tube">
+
+                    <div class="therm-glass">
+                        <span class="fill c-fill"></span>
+                    </div>
+
+                    <div class="therm-bulb">
+                        <span class="amount"></span>
+                    </div>
+                </div>
+
+                <div class="btn-holder">
+                    <button class="celsius__btn">To Celsius</button>
+                    <button class="celsius__resetbtn">Reset</button>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
